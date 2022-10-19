@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+:root {
+  --lightBack: rgb(194, 193, 193);
+  --darkBack: rgb(50,50,50)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  /* background-color: #343a40 ; */
+  background-color: var(--lightBack);
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section {
+  height: 80vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.intro {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 5em;
+  font-weight: 100;
+  color: rgb(250,250,250);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infoCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #6c757d;
+  padding: 1em;
+  /* color: #343a40; */
+  color: rgb(220,220,220);
+  width: 90%;
+  height: 30 vh;
+  border-radius: .6em;
+  box-shadow: 0 20px 15px rgb(0,0,0,.2);
+
+  transition: 6s ease-in all;
+}
+
+.space {
+  width: 13vw;
+  padding: 1vw;
+}
+
+span{
+  padding-inline: .1em;
+  transition: ease-in-out .2s;
+}
+span:hover{
+  scale: 2;
+  color:#6c757d;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.darkModeWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.darkMode {
+  margin: 1em;
+  margin-right: 6em;
+  font-size: 2em;
+  background-color:#6c757d;
+  color: rgb(250,250,250);
+  border: none;
+  width: 10vw;
+  height: 5vh;
+  border-radius: .1em;
+  cursor: pointer;
+}
+
+
+
+
+/* NAVBAR *//* NAVBAR */
+.folder {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 30vw;
+  height: 5vh;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: rgb(0,0,0,.2);
+}
+nav a {
+  color: #343a40;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--lightBack);
+  padding-inline: 1em;
+
+  
+  
+}
+
+
+@media (max-width: 428px) {
+  
+  h1{
+    font-size: 3em;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav {
+    display: none;
   }
+
+
+
 }
