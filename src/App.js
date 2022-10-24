@@ -9,8 +9,6 @@ import Home from './components/Home';
 import About from './components/About';
 
 
-const mainBody = styled.div`
-`
 
 function App() {
 
