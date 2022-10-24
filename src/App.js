@@ -8,9 +8,14 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
 
+// Data
+import siteData from './data';
+
 
 
 function App() {
+
+  const [technicalSkills, setTechnicalSkills] = useState(siteData.skills.technicalSkills)
 
 
   return (
@@ -18,7 +23,7 @@ function App() {
       <div className='darkModeWrap' >
       </div>
       <Routes>
-        <Route path='/'  element={<Home />} />
+        <Route path='/'  element={<Home skills={technicalSkills} />} />
         <Route path='/about'  element={<About />} />
       </Routes>
 

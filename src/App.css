@@ -2,12 +2,14 @@
   --darkBack: black;
   --lightText: white;
 }
+
 body {
   background-color: var(--darkBack);
 }
 
 * {
   font-family: 'Bebas Neue', cursive;
+  color: white;
 }
 
 body * {
@@ -47,7 +49,7 @@ color: var(--lightText);
   letter-spacing: .5em;
   color: white;
   padding: none;
-  margin: none;
+  margin: 0;
   display: none;
 }
 .activeTitle {
@@ -70,27 +72,82 @@ li a {
   display: inline-flex;
   transition: 1s all ease-in;
 }
-
+/* 
 .darkMode {
   width: 5vw;
   color: white;
   background-color: rgb(0,0,0,.0);
 
   height: 2.2vw;
-}
+} */
 
  nav {
   display: flex;
   flex-flow: row nowrap;
-  width: 100vw;
+  width: 99vw;
   height: 10vhvh;
   border: 1px white solid;
   border-inline: none;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-color: rgb(0,0,0,.4);
  }
 
+ .skillsGrid * {
+  color: white;
+  text-align: center;
+ }
+
+ .skillsGrid {
+  padding: 5%;
+  width: 70vw;
+  margin: 0 auto;
+  gap: 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25vw, 20vh));
+  justify-content: center;
+  align-items: center;
+ }
+ .skillWrap{
+  background-color: rgb(250,250,250,.3);
+  padding: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+ }
+ .skillWrap:hover{
+  scale: 1.1;
+  transition: .1s ease-in-out;
+ }
+
+ .skillH {
+  font-size: 3em;
+  font-weight: 100;
+ }
+ .skillP{
+  font-size: 2em;
+  width: 80%;
+  margin: 1em auto;
+  font-weight: 100;
+
+ }
+ .spacer {
+  width: 90vw;
+  height: 20vw;
+  margin: 0 auto;
+ }
+ .Subtitle {
+  color: white;
+  font-size: 5em;
+  letter-spacing: .25em;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding: 15%;
+  padding-bottom: .1em;
+  border-bottom: 1px solid white;
+  font-weight: 100;
+ }
 
 
 
