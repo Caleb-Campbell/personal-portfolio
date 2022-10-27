@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {motion} from 'framer-motion'
 
 function Skills(props) {
 
@@ -15,7 +16,12 @@ function Skills(props) {
     <div className='skillsGrid'>
       {
             skills.map(skill => {
-                return  ( <>
+                return  ( <motion.div
+                whileHover={{
+                  scale: 1.1
+                }}
+                
+                >
                     <div onClick={openUp} key={skill.id} className='skillWrap'>
                     <h5 className='skillH'>{skill.skillName}</h5>
                     <img className='skillIMG' href='https://picsum.photos/200' />
@@ -25,7 +31,7 @@ function Skills(props) {
                     {skill.active === true &&
                     <div className='skillWrap'><h5>{skill.info}</h5></div>
                     }
-                    </>
+                    </motion.div>
                 )
             })
       }

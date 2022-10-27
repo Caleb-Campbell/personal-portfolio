@@ -31,6 +31,10 @@ const Home = (props) => {
           y: 0,
           opacity: 1
         }}
+        transition={{
+          delay: .1,
+          duration: 2
+        }}
         
         className="WebTitle-big">Web Developer</motion.span>
         <section className="spacer"></section>

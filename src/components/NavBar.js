@@ -20,14 +20,31 @@ export default function NavBar() {
 
        { !navOn && (
          
-         <div className='placeHolderWrapper'>
+         <motion.div 
+         initial={{y: 10, opacity: 0,}}
+        animate={{y:0, opacity: 1,}}
+        transition={{
+          duration: 1,
+          type:'spring',
+          stiffness: 10
+        }}
+         className='placeHolderWrapper'>
        <h2 className={ `navTitle`} >Caleb Campbell</h2>
-        </div> ) }
+        </motion.div> ) }
 
         {
           navOn && (
 
-          <ul className={'nav-list'}>
+          <motion.ul
+          initial={{y: -10, opacity: 0,}}
+          animate={{y:0, opacity: 1}}
+          transition={{
+            delay: 0,
+            duration: 1,
+          }}
+          
+          
+          className={'nav-list'}>
           <li>
         <Link to='/'>Home</Link>
           </li>
@@ -37,7 +54,7 @@ export default function NavBar() {
           <li>
         <Link>Contact</Link>
           </li>
-        </ul>
+        </motion.ul>
 
 
           )

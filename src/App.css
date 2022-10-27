@@ -140,10 +140,6 @@ li a {
   border-radius: 30px;
   cursor: pointer;
  }
- .skillWrap:hover{
-  scale: 1.1;
-  transition: .1s ease-in-out;
- }
 
  .skillH {
   font-size: 3em;
