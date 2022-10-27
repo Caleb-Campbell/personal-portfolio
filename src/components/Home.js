@@ -1,4 +1,5 @@
 import React from "react"
+import { motion } from "framer-motion"
 
 import NavBar from "./NavBar"
 import Title from "./Title"
@@ -9,7 +10,29 @@ const Home = (props) => {
     return (
       <div className="home">
         <NavBar />
-        <h1 className="WebTitle">Full <br/> Stack <br/> <span className="WebTitle-big">Web Developer</span></h1>
+        <motion.h1
+        initial={{
+          y: '-100vh',
+          opacity: 0
+        }}
+        animate={{
+          x: 0,
+          y: 50,
+          opacity: 1
+          
+        }}
+         className="WebTitle">Full <br/> Stack <br/></motion.h1>
+        <motion.span
+        initial={{
+          y: '100vh',
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        
+        className="WebTitle-big">Web Developer</motion.span>
         <section className="spacer"></section>
         <h3 className="Subtitle">See My Technical Skills</h3>
         <Skills techSkills={props.skills} />

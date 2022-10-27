@@ -23,16 +23,12 @@ body * {
 color: var(--lightText);
 }
 .nav-list{
-  display: none;
   transition: 1s ease-in-out;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
-  display: none;
   transition: 1s all ease-in;
   align-items: center;
-  translate: -30em;
-
 }
 .placeHolderWrapper{
   display: flex;
@@ -50,11 +46,13 @@ color: var(--lightText);
   color: white;
   padding: none;
   margin: 0;
-  display: none;
 }
+
 .activeTitle {
   display: block;
 }
+
+
 .menu {
   background-color: white;
   border: none;
@@ -72,6 +70,33 @@ li a {
   display: inline-flex;
   transition: 1s all ease-in;
 }
+
+.WebTitle {
+  color: white;
+  font-size: 10em;
+  font-weight: 100;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: .5em;
+  transition: 1s ease-in-out;
+  margin-bottom: 0;
+  padding-bottom: .1em;
+}
+
+.WebTitle-big {
+  color: white;
+  font-size:  12em;
+  font-weight: bold;
+  letter-spacing: .2em;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+  margin-top: 0;
+}
+
+
 /* 
 .darkMode {
   width: 5vw;
