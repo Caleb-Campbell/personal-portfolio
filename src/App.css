@@ -106,6 +106,12 @@ li a {
   height: 2.2vw;
 } */
 
+.skillIMG {
+  width: 20vw;
+  padding: 0;
+  margin: 0;
+}
+
  nav {
   display: flex;
   flex-flow: row nowrap;

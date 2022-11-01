@@ -1,36 +1,45 @@
 import React, {useState} from 'react'
 import {motion} from 'framer-motion'
+import capy from '../data/assets/capy.jpg'
 
 function Skills(props) {
 
     const {techSkills}  = props
 
     const [skills, setSkills] = useState(techSkills)
-    console.log(skills)
 
     const openUp = (e) => {
-        e.target.active = !e.target.active
+      console.log(e.target)
     }
 
   return (
-    <div className='skillsGrid'>
+    <div className='skillsGrid' >
       {
             skills.map(skill => {
                 return  ( <motion.div
                 whileHover={{
-                  scale: 1.1
+                  scale: 1.1,
+                  rotate: 2
+                  
                 }}
+                key={skill.id}
+                onClick={openUp}
                 
                 >
-                    <div onClick={openUp} key={skill.id} className='skillWrap'>
+                    <div   className='skillWrap'>
+                    <img className='skillIMG' src={capy} />
+
+                    {skill.active  && (
+                      <div>
                     <h5 className='skillH'>{skill.skillName}</h5>
-                    <img className='skillIMG' href='https://picsum.photos/200' />
                     <p className='skillP'>{skill.description}</p>
                     <p>{skill.active ? 'On' : "Off"}</p>
+                      </div>
+                    )}
+
+                    
                     </div>
-                    {skill.active === true &&
-                    <div className='skillWrap'><h5>{skill.info}</h5></div>
-                    }
+                    
                     </motion.div>
                 )
             })
