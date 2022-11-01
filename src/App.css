@@ -170,6 +170,77 @@ li a {
   font-weight: 100;
  }
 
+ .folderBar {
+   display: flex;
+   width: 60%;
+   margin: 0 auto;
+   margin-top: 5em;
+  justify-content: space-around;
+
+ }
+
+ h2{
+  color: white;
+ }
+
+ .folder {
+  width: 10em;
+  font-size: 2em;
+  color: white;
+  background-color: rgb(0,0,0,.4);
+  border: 1px white solid;
+  margin-inline: 1em;
+  cursor: pointer;
+ }
+ .folder:hover {
+  color: black;
+  background-color: white;
+  transition: 1s;
+ }
+
+ .attWrap {
+  width: 80vw;
+  height: 20vh;
+  border: 1px white solid;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 1em;
+ }
+
+ .attWrap p {
+  font-size: 2em;
+  color: white;
+ }
+
+ .marryWrap {
+  display: flex;
+  margin-top: 8em;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .marryWrap img {
+  width: 20vw;
+  border-radius: 50px;
+  display: inline;
+  padding: 1em;
+  padding-left: 20vw;
+ }
+
+ .about-header * {
+  color: white;
+ }
+
+ .about-header {
+  display: inline;
+  width: 20vw;
+ }
 
 
 
