@@ -10,6 +10,7 @@ const Home = (props) => {
     return (
       <div  className="home">
         <NavBar />
+        {/* <h2 className="mobile-title">Caleb Campbell</h2> */}
         <motion.div 
         initial={{opacity: 0, x:10, y:10, boxShadow: 'none'}} 
         animate={{opacity: 1, x:0, y:0, boxShadow: '0 15px 15px var(--opaque)'}} 
