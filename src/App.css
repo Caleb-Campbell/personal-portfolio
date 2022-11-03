@@ -27,7 +27,6 @@ color: var(--lightText);
   display: flex;
   justify-content: space-around;
   width: 90%;
-  transition: 1s all ease-in;
   align-items: center;
 }
 .placeHolderWrapper{
@@ -62,6 +61,7 @@ color: var(--lightText);
   
  }
 li a {
+  align-items: center;
   text-decoration: none;
   color: white;
   font-size: 3em;
@@ -251,38 +251,103 @@ li a {
 
  @media (max-width: 428px) {
 
+  * {
+    max-width: 100%;
+    /* border: red 1px solid; */
+  }
+
   .placeHolderWrapper {
-    width: 99vw;
+    width: 80vw;
     font-size: .4em;
+    padding-left: 5em;
+    font-weight: 100;
+    display: none;
   }
   
   .WebTitle {
     font-size: 6em;
-    margin: 0 auto;
+    margin: 1em auto;
+    padding: 0;
+    padding-top: 1em;
+    width: 80vw;
   }
   .WebTitle-big {
-    font-size: 5em;
-    text-align: center;
-    margin: 0 auto;
+    font-size: 4em;
+    text-align: start;
+    margin: 1em auto;
+    word-wrap: normal;
   }
 
-  .nav {
+  .Subtitle {
+    font-size: 2em;
+    width: 90vw;
+    padding: 0;
+  }
+
+  .spacer {
+    width: 90vw;
+  }
+
+  nav {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
+    width: 99vw;
+    background-color: rgb(0,0,0,.4);
+    border-bottom: none;
   }
 
   .nav-list {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0;
+    width: 99vw;
+
+  }
+
+  li {
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+
+
+  }
+
+  .nav-list a {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+
   }
 
   .menu {
-    display: block;
     width: 100vw;
     font-size: 2em;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
+  .skillsGrid {
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(80vw, 20vh));
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+  .skillWrap {
+    width: 80vw;
+    height: 60vw;
+  
+  }
+
+  .skillIMG {
+    width: 16rem;
+  }
 
 
  }

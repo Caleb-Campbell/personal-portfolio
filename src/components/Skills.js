@@ -27,7 +27,7 @@ function Skills(props) {
                 
                 >
                     <div   className='skillWrap'>
-                    <img className='skillIMG' src={capy} />
+                    <img className='skillIMG' src={skill.img} />
 
                     {skill.active  && (
                       <div>
