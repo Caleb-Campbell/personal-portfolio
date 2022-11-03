@@ -1,6 +1,22 @@
 :root {
-  --darkBack: black;
+  --darkBack: rgb(141, 153, 174);
   --lightText: white;
+  --opaque: rgb(113, 123, 141, .6);
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--opaque);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: white;
+  /* border: 3px solid var(--darkBack);
+   */
+   padding: 1px;
+  border-radius: 10px;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -8,8 +24,8 @@ body {
 }
 
 * {
-  font-family: 'Bebas Neue', cursive;
-  color: white;
+  font-family: 'Bodoni Moda', serif;
+  /* border: red 1px solid; */
 }
 
 body * {
@@ -28,19 +44,21 @@ color: var(--lightText);
   justify-content: space-around;
   width: 90%;
   align-items: center;
+  height: 9vh;
 }
 .placeHolderWrapper{
   display: flex;
   justify-content: center;
   height: 11vh;
-  width: 95%;
+  width: 95vw;
   padding: none;
   margin: none;
   align-items: center;
 
 }
 .navTitle {
-  font-size: 5em;
+  font-weight: 100;;
+  font-size: 3em;
   letter-spacing: .5em;
   color: white;
   padding: none;
@@ -52,39 +70,61 @@ color: var(--lightText);
 }
 
 
+
 .menu {
   background-color: white;
+  width: 19vw;
+  height: 10vh;
   border: none;
   color: black;
-  font-size: 3em;
+  font-size: 2em;
   padding: 1%;
+  font-weight: 300;
   
- }
+}
+
+li {
+  width: 19vw;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
 li a {
   align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 3em;
- }
+  font-size: 2em;
+}
 .active {
   display: inline-flex;
   transition: 1s all ease-in;
 }
+.titleWrap {
+  display: flex;
+  width: 30vw;
+  margin: 0 auto;
+  margin-top: 25vh;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  padding: 2em;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(113, 123, 141, .3);
+}
 
 .WebTitle {
   color: white;
-  font-size: 10em;
-  font-weight: 100;
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em;
-  padding-top: .5em;
-  transition: 1s ease-in-out;
-  margin-bottom: 0;
-  padding-bottom: .1em;
+  font-size: 5em;
+  font-weight: 200;
+  text-align: center;
+  text-shadow: 0 5px 5px var(--opaque);
+
 }
 
-.WebTitle-big {
+/* .WebTitle-big {
   color: white;
   font-size:  12em;
   font-weight: bold;
@@ -94,7 +134,7 @@ li a {
   width: 80%;
   display: block;
   margin-top: 0;
-}
+} */
 
 
 /* 
@@ -116,13 +156,14 @@ li a {
   display: flex;
   flex-flow: row nowrap;
   width: 99vw;
-  height: 10vhvh;
-  border: 1px white solid;
-  border-inline: none;
-  position: -webkit-sticky;
+  margin: 0 auto;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
+  height: 10vh;
+  /* position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  background-color: rgb(0,0,0,.4);
+  top: 0; */
+  background-color: var(--opaque);
  }
 
  .skillsGrid * {
@@ -141,16 +182,24 @@ li a {
   align-items: center;
  }
  .skillWrap{
-  background-color: rgb(250,250,250,.3);
-  padding: 1em;
+  display: flex;
+  background-color: var(--opaque);
   border-radius: 30px;
   cursor: pointer;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 15px rgb(0,0,0,.3);
  }
 
+
  .skillH {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 100;
+  padding: .5em;
+  text-shadow: 5px 5px 5px var(--opaque);
  }
+
  .skillP{
   font-size: 2em;
   width: 80%;
@@ -163,6 +212,7 @@ li a {
   height: 20vw;
   margin: 0 auto;
  }
+
  .Subtitle {
   color: white;
   font-size: 5em;

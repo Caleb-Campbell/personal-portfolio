@@ -27,11 +27,11 @@ function Skills(props) {
                 
                 >
                     <div   className='skillWrap'>
-                    <img className='skillIMG' src={skill.img} />
-
+                    {/* <img className='skillIMG' src={skill.img} /> */}
+                    <h5 className='skillH'>{skill.skillName}</h5>
+                    <h5 className='skillH'>+</h5>
                     {skill.active  && (
                       <div>
-                    <h5 className='skillH'>{skill.skillName}</h5>
                     <p className='skillP'>{skill.description}</p>
                     <p>{skill.active ? 'On' : "Off"}</p>
                       </div>
