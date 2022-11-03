@@ -22,7 +22,8 @@ body {
 }
 
 * {
-  font-family: 'Bodoni Moda', serif;
+  /* font-family: 'Bodoni Moda', serif; */
+  font-family: 'Julius Sans One', sans-serif;
   /* border: red 1px solid; */
 }
 
