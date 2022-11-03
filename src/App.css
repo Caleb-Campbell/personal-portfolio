@@ -9,8 +9,6 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb{
   background-color: white;
-  /* border: 3px solid var(--darkBack);
-   */
    padding: 1px;
   border-radius: 10px;
 }
@@ -146,6 +144,10 @@ li a {
   height: 2.2vw;
 } */
 
+.mobile-title {
+  display: none;
+}
+
 .skillIMG {
   width: 20vw;
   padding: 0;
@@ -197,7 +199,6 @@ li a {
   font-size: 2.5em;
   font-weight: 100;
   padding: .5em;
-  text-shadow: 5px 5px 5px var(--opaque);
  }
 
  .skillP{
@@ -302,9 +303,22 @@ li a {
  @media (max-width: 428px) {
 
   * {
-    max-width: 100%;
+    max-width: 100vw;
     /* border: red 1px solid; */
   }
+
+  /* .mobile-title {
+    display: block;
+    width: 65vw;
+    padding: 1em;
+    height: 10vh;
+    border: 1px white solid;
+    font-weight: 100;
+    margin: 0 auto;
+    background-color: rgb(113, 123, 141, .3);
+    border-radius: 5px;
+    text-align: center;
+  } */
 
   .placeHolderWrapper {
     width: 80vw;
@@ -312,38 +326,48 @@ li a {
     padding-left: 5em;
     font-weight: 100;
     display: none;
+
   }
+
+  .titleWrap {
+    width: 70vw;
+    height: 29vh;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  
   
   .WebTitle {
-    font-size: 6em;
-    margin: 1em auto;
+    font-size: 2.5em;
     padding: 0;
     padding-top: 1em;
-    width: 80vw;
-  }
-  .WebTitle-big {
-    font-size: 4em;
-    text-align: start;
-    margin: 1em auto;
-    word-wrap: normal;
+    margin: 0 auto;
+
   }
 
   .Subtitle {
-    font-size: 2em;
-    width: 90vw;
+    font-size: 2.5em;
+    width: 85vw;
     padding: 0;
+    padding-top: 1em;
+    padding-bottom: 10vh;
+    margin: 0 auto;
+
   }
 
   .spacer {
-    width: 90vw;
+    width: 80vw;
   }
 
   nav {
     display: flex;
     flex-flow: column nowrap;
-    width: 99vw;
-    background-color: rgb(0,0,0,.4);
+    width: 100vw;
     border-bottom: none;
+    background: none;
   }
 
   .nav-list {
@@ -351,7 +375,13 @@ li a {
     flex-flow: column nowrap;
     justify-content: center;
     padding: 0;
+    padding-top: 1.9em;
     width: 99vw;
+    margin: 0;
+    background-color: white;
+    height: 30vh;
+    padding-bottom: 1em;
+    position:inherit;
 
   }
 
@@ -360,14 +390,13 @@ li a {
     width: 100vw;
     margin: 0 auto;
     padding: 0;
-
-
   }
 
   .nav-list a {
     text-align: center;
     padding: 0;
     margin: 0 auto;
+    color: black;
 
   }
 
@@ -378,21 +407,28 @@ li a {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    height: 7vh;
   }
 
   .skillsGrid {
-    width: 80vw;
-    grid-template-columns: repeat(auto-fill, minmax(80vw, 20vh));
+    width: 70vw;
+    grid-template-columns: repeat(auto-fill, minmax(90vw, 15vh));
+    gap: 35px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    /* border: 1px white solid; */
 
   }
 
   .skillWrap {
-    width: 80vw;
-    height: 60vw;
-  
+    width: 90vw;
+    height: 15vw;  
+  }
+
+  .skillH {
+    font-size: 1.5em;
+
   }
 
   .skillIMG {

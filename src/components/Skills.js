@@ -26,6 +26,7 @@ function Skills(props) {
                 onClick={openUp}
                 
                 >
+                    
                     <div   className='skillWrap'>
                     {/* <img className='skillIMG' src={skill.img} /> */}
                     <h5 className='skillH'>{skill.skillName}</h5>
