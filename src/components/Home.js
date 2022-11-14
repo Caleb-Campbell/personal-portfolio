@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import {ReactComponent as SVG} from '../data/assets/anim.svg'
 
 import NavBar from "./NavBar"
 import Title from "./Title"
@@ -10,12 +11,16 @@ const Home = (props) => {
     return (
       <div  className="home">
         <NavBar />
-        {/* <h2 className="mobile-title">Caleb Campbell</h2> */}
+        <div className="title-wrap">
+
+        <div className="svg">
+          <SVG />
+        </div>
         <motion.div 
         initial={{opacity: 0, x:10, y:10, boxShadow: 'none'}} 
         animate={{opacity: 1, x:0, y:0, boxShadow: '0 15px 15px var(--opaque)'}} 
         transition={{duration: 1}}
-        className="titleWrap">
+        className="title">
         <motion.h1
         initial={{
           opacity: 0
@@ -27,8 +32,9 @@ const Home = (props) => {
           delay: .2,
           duration: 1
         }}
-         className="WebTitle">Full Stack <br/> Web Developer</motion.h1>
+        className="WebTitle">Full Stack <br/> Web Developer</motion.h1>
          </motion.div>
+        </div>
         
         <section className="spacer"></section>
         <h3 className="Subtitle">See My Technical Skills</h3>

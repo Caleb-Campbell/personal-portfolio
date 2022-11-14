@@ -21,13 +21,7 @@ export default function NavBar() {
        { !navOn && (
          
          <motion.div 
-         initial={{y: 10}}
-        animate={{y:0}}
-        transition={{
-          duration: .1,
-          type:'spring',
-          stiffness: 10
-        }}
+         
          className='placeHolderWrapper'>
        <h2 className={ `navTitle`} >Caleb Campbell</h2>
         </motion.div> ) }

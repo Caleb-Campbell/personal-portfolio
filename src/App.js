@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <div style={style} className="App" >
+    <div  className="App" >
       <div className='darkModeWrap' >
       </div>
       <Routes>
