@@ -69,12 +69,17 @@ color: var(--lightText);
 
 .title-wrap{
   border: 1px white solid;
+  display: flex;
+  width: 60vw;
+}
+
+.svg-wrap{
+  display: inline;
 }
 
 .svg{
   margin: 0 auto;
   width: 30vw;
-  scale: .5;
   margin-top: 5em;
   display: inline;
 }
@@ -88,7 +93,6 @@ color: var(--lightText);
   justify-content: center;
   height: 30vh;
   padding: 2em;
-  border: 1px solid white;
   border-radius: 5px;
 }
 

@@ -13,8 +13,8 @@ const Home = (props) => {
         <NavBar />
         <div className="title-wrap">
 
-        <div className="svg">
-          <SVG />
+        <div className="svg-wrap">
+          <SVG className="svg" />
         </div>
         <motion.div 
         initial={{opacity: 0, x:10, y:10, boxShadow: 'none'}} 
