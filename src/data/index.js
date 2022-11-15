@@ -12,7 +12,7 @@ const siteData = {
                 info: "I'm a good little boy in need of some hugs"
             },
             {
-                skillName: 'React',
+                skillName: 'Node',
                 description: 'This site is built in React',
                 img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.imgbin.com%2F3%2F6%2F2%2Fimgbin-node-js-javascript-react-logo-express-js-javascript-logo-bBmMA8X88t7G16jsxZ17SysmA.jpg&f=1&nofb=1&ipt=149965e54cdea9765fbbdc260a5e48a481ff022abd2c783a330e9f06ab2de1be&ipo=images',
                 id: 21,
@@ -20,7 +20,7 @@ const siteData = {
                 info: "I'm a good little boy in need of some hugs"
             },
             {
-                skillName: 'React',
+                skillName: 'Express',
                 description: 'This site is built in React',
                 img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.imgbin.com%2F3%2F6%2F2%2Fimgbin-node-js-javascript-react-logo-express-js-javascript-logo-bBmMA8X88t7G16jsxZ17SysmA.jpg&f=1&nofb=1&ipt=149965e54cdea9765fbbdc260a5e48a481ff022abd2c783a330e9f06ab2de1be&ipo=images',
                 id: 22,
@@ -28,7 +28,7 @@ const siteData = {
                 info: "I'm a good little boy in need of some hugs"
             },
             {
-                skillName: 'React',
+                skillName: 'CSS',
                 description: 'This site is built in React',
                 img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.imgbin.com%2F3%2F6%2F2%2Fimgbin-node-js-javascript-react-logo-express-js-javascript-logo-bBmMA8X88t7G16jsxZ17SysmA.jpg&f=1&nofb=1&ipt=149965e54cdea9765fbbdc260a5e48a481ff022abd2c783a330e9f06ab2de1be&ipo=images',
                 id: 23,
@@ -36,7 +36,7 @@ const siteData = {
                 info: "I'm a good little boy in need of some hugs"
             },
             {
-                skillName: 'React',
+                skillName: 'Giving Head',
                 description: 'This site is built in React',
                 img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.imgbin.com%2F3%2F6%2F2%2Fimgbin-node-js-javascript-react-logo-express-js-javascript-logo-bBmMA8X88t7G16jsxZ17SysmA.jpg&f=1&nofb=1&ipt=149965e54cdea9765fbbdc260a5e48a481ff022abd2c783a330e9f06ab2de1be&ipo=images',
                 id: 24,
@@ -44,7 +44,7 @@ const siteData = {
                 info: "I'm a good little boy in need of some hugs"
             },
             {
-                skillName: 'React',
+                skillName: 'Dancing',
                 description: 'This site is built in React',
                 img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.imgbin.com%2F3%2F6%2F2%2Fimgbin-node-js-javascript-react-logo-express-js-javascript-logo-bBmMA8X88t7G16jsxZ17SysmA.jpg&f=1&nofb=1&ipt=149965e54cdea9765fbbdc260a5e48a481ff022abd2c783a330e9f06ab2de1be&ipo=images',
                 id: 25,
@@ -52,41 +52,41 @@ const siteData = {
                 info: "I'm a good little boy in need of some hugs"
             },
             {
-                skillName: 'Skills',
+                skillName: 'Rimworld',
                 description: 'See the technical skills I have',
                 img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.imgbin.com%2F3%2F6%2F2%2Fimgbin-node-js-javascript-react-logo-express-js-javascript-logo-bBmMA8X88t7G16jsxZ17SysmA.jpg&f=1&nofb=1&ipt=149965e54cdea9765fbbdc260a5e48a481ff022abd2c783a330e9f06ab2de1be&ipo=images',
                 id: 26,
                 active: false
             },
             {
-                skillName: 'Skills',
+                skillName: 'Being a little boy',
                 description: 'See the technical skills I have',
                 img: '',
                 id: 3,
                 active: false
             },
             {
-                skillName: 'Skills',
+                skillName: 'Cypress',
                 description: 'See the technical skills I have',
                 img: '',
                 id: 4,
                 active: false
             },
             {
-                skillName: 'Skills',
+                skillName: 'SQL',
                 description: '',
                 id: 5,
                 active: false
             },
             {
-                skillName: 'Skills',
+                skillName: 'Vercel',
                 description: 'See the technical skills I have',
                 img: '',
                 id: 6,
                 active: false
             },
             {
-                skillName: 'Skills',
+                skillName: 'HTML',
                 description: 'See the technical skills I have',
                 img: '',
                 id: 61,

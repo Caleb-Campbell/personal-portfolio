@@ -67,33 +67,63 @@ color: var(--lightText);
   display: block;
 }
 
-.title-wrap{
-  border: 1px white solid;
+.home-slide-1 {
+  height: 80vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-wrap{
+  border-bottom: 1px white solid;
+  border-top: 1px white solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60vw;
+  height: 40vh;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding: 5em;
 }
 
 .svg-wrap{
   display: inline;
+  margin: 1em;
 }
 
 .svg{
   margin: 0 auto;
-  width: 30vw;
+  width: 20vw;
   margin-top: 5em;
   display: inline;
 }
 
 .title {
-  display: inline-flex;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: rgb(58, 90, 64, .1);
+  height: 20vh;
+  margin: 1em;
+  text-decoration-thickness: 1px;
+  color: white;
+}
+
+.swiper{
   width: 30vw;
-  margin: 0 auto;
-  margin-top: 25vh;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  padding: 2em;
-  border-radius: 5px;
+  height: 5vh;
+  overflow: hidden;
+}
+
+.swipe-slide{
+  width: 30vw;
+  font-size: 3em;
+  height: 5vh;
+  color: white;
+  text-align: center;
+
 }
 
 
@@ -130,10 +160,9 @@ li a {
 
 .WebTitle {
   color: white;
-  font-size: 5em;
+  font-size: 2em;
   font-weight: 200;
   text-align: center;
-  text-shadow: 0 5px 5px var(--opaque);
 
 }
 
