@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
+import DashBoard from './components/DashBoard';
 
 // Data
 import siteData from './data';
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/'  element={<Home skills={technicalSkills} />} />
         <Route path='/about'  element={<About />} />
+        <Route path='/dashboard'  element={<DashBoard />} />
       </Routes>
 
     </div>

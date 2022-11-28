@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import NavBar from './NavBar'
 
 //data
-import dashData from '../data/assets/dashData'
+import {funData, productivityData} from '../data/assets/dashData'
 
 
 const DashItem = (props) => {
@@ -42,14 +42,33 @@ const DashList = (props) => {
 
 export default function DashBoard() {
 
-    const [data, setData] = useState(dashData)
-    const [tab, setTab] = useState()
+    const [data, setData] = useState(funData)
+    const [tab, setTab] = useState('overview')
+
+    const changeTab = (e) => {
+        setTab(e.target.name)
+    }
+
+    const renderFromTab = (tab) => {
+        if(tab === 'overview'){
+
+        }
+        else {
+            return (<DashList dash={data} />)
+        }
+    }
 
   return (
     <div className='dashboard'>
     <NavBar />
-
-    <DashList dash={data} />
+    <div className='tab-wrap'>
+    <button onClick={changeTab} name="overview">overview</button>
+    <button onClick={changeTab} name="productivity">productivity</button>
+    <button onClick={changeTab} name= 'development'>development</button>
+    <button onClick={changeTab} name='fun'>recreation</button>
+    <h1>{tab}</h1>
+    </div>
+    
     
     
     

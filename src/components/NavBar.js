@@ -41,7 +41,7 @@ export default function NavBar() {
         <Link to='/about'>About</Link>
           </li>
           <li>
-        <Link>Contact</Link>
+        <Link to='/dashboard'>DashBoard</Link>
           </li>
         </motion.ul>
 
