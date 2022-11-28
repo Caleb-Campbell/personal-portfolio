@@ -65,11 +65,20 @@ const productivityData = [
         category: 'entertainment',
         link: 'https://youtube.com',
         img: 'https://picsum.photos/200',
+        description: 'I work hard on lots of things productively!'
+    }
+]
+const developmentData = [
+    {   id: 1,
+        name: 'development stuff',
+        category: 'development',
+        link: 'https://youtube.com',
+        img: 'https://picsum.photos/200',
         description: 'I work hard on lots of things!'
     }
 ]
 
 export {
-    funData, productivityData
+    funData, productivityData, developmentData
 
 }

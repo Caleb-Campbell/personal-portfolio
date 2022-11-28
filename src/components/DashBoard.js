@@ -4,11 +4,18 @@ import React, { useState } from 'react'
 import NavBar from './NavBar'
 
 //data
-import {funData, productivityData} from '../data/assets/dashData'
+import {funData, productivityData, developmentData} from '../data/assets/dashData'
 
+
+const dataObj = {
+    recreation: funData,
+    productivity: productivityData,
+    development: developmentData
+
+}
 
 const DashItem = (props) => {
-    const {id, name, category, link, img, description } = props.item
+    const {id, name, category, img, description } = props.item
     return (
         <div style={{
             backgroundImage: `url(${img})`
@@ -49,12 +56,12 @@ export default function DashBoard() {
         setTab(e.target.name)
     }
 
-    const renderFromTab = (tab) => {
+    const renderFromTab = (dataToUse) => {
         if(tab === 'overview'){
 
         }
         else {
-            return (<DashList dash={data} />)
+            return (<DashList dash={dataToUse} />)
         }
     }
 
@@ -65,9 +72,9 @@ export default function DashBoard() {
     <button onClick={changeTab} name="overview">overview</button>
     <button onClick={changeTab} name="productivity">productivity</button>
     <button onClick={changeTab} name= 'development'>development</button>
-    <button onClick={changeTab} name='fun'>recreation</button>
-    <h1>{tab}</h1>
+    <button onClick={changeTab} name='recreation'>recreation</button>
     </div>
+    {renderFromTab(dataObj[tab])}
     
     
     
