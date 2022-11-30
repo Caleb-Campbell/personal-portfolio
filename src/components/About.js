@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Routes, Route} from 'react-router-dom'
+import '../styles/about.css'
 
 import ProfileImage from '../data/assets/profile.jpg'
 
@@ -26,10 +27,10 @@ const getFolder = e => {
             <h3>
               Get to know me
             </h3>
+            <p>I grew up in Spokane, Washington, working from the time I was 14. After marrying the beautiful Katlyn Hatch, we moved to Southern Idaho, allowing her to finish school for Elementary Education, while I continued studying Full Stack Web Development at Bloom Institute of Technology. </p>
           </div>
         </div>
 
-        <section className="spacer"></section>
         <h3 className="Subtitle">Other Valuable Skills</h3>
 
 
